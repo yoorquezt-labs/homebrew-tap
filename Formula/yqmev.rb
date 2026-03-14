@@ -5,21 +5,21 @@
 class Yqmev < Formula
   desc "MEV terminal dashboard — monitor, analyze, and interact with YoorQuezt MEV infrastructure"
   homepage "https://github.com/yoorquezt-labs/yqmev"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoorquezt-labs/yqmev/releases/download/v0.1.0/yqmev_darwin_amd64.tar.gz"
-      sha256 "56f100d5a383d26832526a18cd151599d0431259c12d466fd03384d6c2e32bf9"
+      url "https://github.com/yoorquezt-labs/yqmev/releases/download/v0.1.1/yqmev_darwin_amd64.tar.gz"
+      sha256 "d4d32c013c973801eb95ff09e082f1b04e6c6b3a330cf314b23793c7e9283943"
 
       define_method(:install) do
         bin.install "yqmev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoorquezt-labs/yqmev/releases/download/v0.1.0/yqmev_darwin_arm64.tar.gz"
-      sha256 "e386c062559ca13a56c66d3525210f684cde0633551599509fd4012d8dbd598d"
+      url "https://github.com/yoorquezt-labs/yqmev/releases/download/v0.1.1/yqmev_darwin_arm64.tar.gz"
+      sha256 "a3019474108705f4e7fddb94fc4bb115f201a78131dbd93f8cafcd504bfed6d4"
 
       define_method(:install) do
         bin.install "yqmev"
@@ -29,15 +29,15 @@ class Yqmev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoorquezt-labs/yqmev/releases/download/v0.1.0/yqmev_linux_amd64.tar.gz"
-      sha256 "f1d594c88d99190444c65f39c12a641fa813fe0644976c5f2664ebd6be5f1168"
+      url "https://github.com/yoorquezt-labs/yqmev/releases/download/v0.1.1/yqmev_linux_amd64.tar.gz"
+      sha256 "1f0d64ebd5435e8aee98cb306fa1d12938210b448e1ace40c604c7bedded36ef"
       define_method(:install) do
         bin.install "yqmev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoorquezt-labs/yqmev/releases/download/v0.1.0/yqmev_linux_arm64.tar.gz"
-      sha256 "ad632132c17f68a266db5ce2fcab0969fe3a44226dc4f435f87e142bcb455176"
+      url "https://github.com/yoorquezt-labs/yqmev/releases/download/v0.1.1/yqmev_linux_arm64.tar.gz"
+      sha256 "01a854438d7ba32ec156b5fde0d10d275c89715817b8767b8741cb77d3a05633"
       define_method(:install) do
         bin.install "yqmev"
       end
